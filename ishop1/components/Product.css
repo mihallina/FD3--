@@ -1,0 +1,39 @@
+.card{
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 10px;
+    background-color: #2fd1f23e;
+}
+
+.img-wrapper{
+    display: flex;
+    gap: 15px;
+}
+
+.text-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p{
+    margin: 0;
+}
+
+img{
+    width: 100px;
+}
+
+.product-name{
+    font-size: 36px;
+}
+
+.price{
+    font-size: 28px;
+}
+
+.instock{
+    font-size: 20px;
+}

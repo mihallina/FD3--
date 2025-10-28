@@ -1,9 +1,16 @@
-﻿.shop_name{
+﻿.logo{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.shop_name{
   margin: 0;
-  font-size: 48px;
+  font-size: 72px;
   font-weight: 700;
 }
 
 .shop_address{
   margin: 0;
+  font-size: 24px;
 }

@@ -1,0 +1,30 @@
+[
+    {
+        "name":"Dress",
+        "price":95,
+        "url":"https://ae04.alicdn.com/kf/S706669e57b3e4a2fa87c1044a39be905O.jpg_480x480.jpg",
+        "instock":200,
+        "key":1
+    },
+    {
+        "name":"Pants",
+        "price":115,
+        "url":"https://images.deal.by/164552218_w600_h600_164552218.jpg",
+        "instock":83,
+        "key":2
+    },
+    {
+        "name":"Teapot",
+        "price":48,
+        "url":"https://cdn.api.kari.com/f/c2705010_001.jpg",
+        "instock":304,
+        "key":3
+    },
+    {
+        "name":"Pencils",
+        "price":15,
+        "url":"https://img.detmir.st/v1esV4U2yQrrYen3TvONMK3GT__WWu2aLbDugdi9FGU/rs:fit:700:700/g:sm/aHR0cHM6Ly9jYXRhbG9nLWNkbi5kZXRtaXIuc3QvbWVkaWEvOUFuREVnX3VnbzQ2WTE5X1FCWkJsc2VRYzFibjg2NGQ3bHp5TXNMLU5icz0uanBlZw.webp",
+        "instock":346,
+        "key":4
+    }
+]
