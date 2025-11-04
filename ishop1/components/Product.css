@@ -4,7 +4,12 @@
     justify-content: space-between;
     margin-top: 25px;
     padding: 10px;
-    background-color: #2fd1f23e;
+    background-color: #caf6ff;
+    border-radius: 5px;
+}
+
+.card.selected{
+    background-color: #54c0b1;
 }
 
 .img-wrapper{
@@ -24,6 +29,7 @@ p{
 
 img{
     width: 100px;
+    border-radius: 5px;
 }
 
 .product-name{
@@ -34,6 +40,25 @@ img{
     font-size: 28px;
 }
 
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 .instock{
     font-size: 20px;
+}
+
+.delete-btn{
+    padding: 4px 15px;
+    border: solid 2px #0f5c6b;
+    border-radius: 8px;
+    background-color: #54cae2;
+}
+
+.delete-btn:hover{
+    background-color: #18788e;
+    color: #fff;
 }
