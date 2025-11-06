@@ -4,32 +4,27 @@ import "./Shop.css";
 import Product from "./Product";
 
 class Shop extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       products: this.props.products,
-      selectedIds: new Set()
-    }
+      selectedId: null,
+    };
     this.deleteProduct = this.deleteProduct.bind(this);
     this.changeColor = this.changeColor.bind(this);
   }
 
   deleteProduct(key) {
     this.setState({
-      products: this.state.products.filter((el) => el.key !== key)
-    })
+      products: this.state.products.filter((el) => el.key !== key),
+    });
   }
 
   changeColor(key) {
-    this.setState(prevState => {
-      const newSelected = new Set(prevState.selectedIds);
-      if(newSelected.has(key)){
-        newSelected.delete(key);
-      } else {
-        newSelected.add(key);
-      }
-      return {selectedIds: newSelected}
-    }) 
+    this.setState((prevState) => {
+      const newSelectedId = prevState.selectedId === key ? null : key;
+      return { selectedId: newSelectedId };
+    });
   }
 
   render() {
@@ -41,7 +36,7 @@ class Shop extends React.Component {
         name={pr.name}
         price={pr.price}
         instock={pr.instock}
-        selected={this.state.selectedIds.has(pr.key)}
+        selected={this.state.selectedId === pr.key}
         onSelect={this.changeColor}
         onDelete={this.deleteProduct}
       />
