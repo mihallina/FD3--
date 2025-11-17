@@ -5,30 +5,35 @@ class FilterSelect extends React.Component {
   state = {
     inputText: "",
     isChecked: false,
+    words: this.props.wordsArr
   };
 
   textChanged = (eo) => {
-    this.setState({ inputText: eo.target.value });
+    this.setState({ inputText: eo.target.value }, this.processWords);
   };
 
   checkboxChanged = (eo) => {
-    this.setState({ isChecked: eo.target.checked });
+    this.setState({ isChecked: eo.target.checked }, this.processWords);
   };
 
   resetAll = () => {
-    this.setState({isChecked: false, inputText: ''});
+    this.setState({isChecked: false, inputText: ''}, this.processWords);
   };
 
-  render() {
+  processWords = () => {
     let filteredArr = this.props.wordsArr.filter((word) =>
       word.toLowerCase().includes(this.state.inputText.toLowerCase())
     );
-
+  
     if(this.state.isChecked){
         filteredArr = filteredArr.sort()
     }
+    this.setState({words: filteredArr})
+  }
+
+  render() {
     
-    const selectCode = filteredArr.map((word, index) => (
+    const selectCode = this.state.words.map((word, index) => (
       <option key={index} value={word}>
         {word}
       </option>
