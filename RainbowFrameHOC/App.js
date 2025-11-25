@@ -7,6 +7,6 @@ let colors = ["red", "orange", "yellow", "green", "#00BFFF", "blue", "purple"];
 let FramedDoubleButton = withRainbowFrame(colors)(DoubleButton);
 
 ReactDOM.render(
-  <FramedDoubleButton caption1="hello" caption2="mama" cbPressed={ num => alert(`клик на кнопке ${num}`) }>dear</FramedDoubleButton>,
+  <FramedDoubleButton caption1="hello" caption2="mama" cbPressed={ num => alert(`клик на кнопке ${num}`) }>gaga</FramedDoubleButton>,
   document.getElementById("container")
 );

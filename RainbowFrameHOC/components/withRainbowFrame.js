@@ -6,12 +6,12 @@ function withRainbowFrame(colors) {
   return function (Comp) {
     return (props) => {
       const reversedColors = [...colors].reverse();
-      let content = <Comp {...props}>{props.children}</Comp>;
+      let content = <Comp {...props} />;
 
       for (let i = 0; i < reversedColors.length; i++) {
         const color = reversedColors[i];
         content = (
-          <div key={i} className="frame" style={{ borderColor: color }}>
+          <div className="frame" style={{ borderColor: color }}>
             {content}
           </div>
         );
