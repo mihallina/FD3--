@@ -1,0 +1,25 @@
+﻿.row{
+  border: 1px solid black;
+}
+
+.active{
+  background-color: rgb(86, 212, 64);
+}
+
+.blocked{
+  background-color: rgb(255, 63, 63);
+}
+
+.status{
+  text-align: center;
+}
+
+.save-cancel{
+  display: flex;
+  justify-content: space-between;
+}
+
+.save, .cancel{
+  width: 45px;
+  height: 20px;
+}
