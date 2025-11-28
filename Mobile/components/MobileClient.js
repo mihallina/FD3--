@@ -51,7 +51,7 @@ class MobileClient extends React.PureComponent {
 
   cancel = () => {
     const { client } = this.props;
-    if (client.fam === "[новый]") {
+    if (client.fam === "новый") {
       events.emit("client:delete", client.id);
     } else {
       this.setState({ isEditing: false });

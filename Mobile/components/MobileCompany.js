@@ -43,7 +43,7 @@ class MobileCompany extends React.PureComponent {
       this.state.clients.reduce((max, c) => Math.max(max, c.id), 0) + 1;
     const newClient = {
       id: newId,
-      fam: "[новый]",
+      fam: "новый",
       name: "",
       otch: "",
       balance: 0,
