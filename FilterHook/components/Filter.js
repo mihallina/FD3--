@@ -19,12 +19,12 @@ export default function Filter({wordsArr}) {
     setWords(filteredArr);
   }, [inputTxt, isChecked, wordsArr])
 
-  function checkboxChanged(eo) {
-    setIsChecked(eo.target.checked);
+  function checkboxChanged(checked) {
+    setIsChecked(checked);
   }
 
-  function textChanged(eo) {
-    setInputTxt(eo.target.value);
+  function textChanged(value) {
+    setInputTxt(value);
   }
 
   function resetAll() {

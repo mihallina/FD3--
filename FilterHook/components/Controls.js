@@ -8,13 +8,13 @@ export default function Controls(props) {
         type="checkbox"
         id="filter"
         checked={props.isChecked}
-        onChange={props.cbCheckbox}
+        onChange={(e) => {props.cbCheckbox(e.target.checked)}}
       />
       <input
         type="text"
         id="text"
         value={props.inputValue}
-        onChange={props.cbInputTxt}
+        onChange={(e) => {props.cbInputTxt(e.target.value)}}
       />
       <button onClick={props.cbResetAll}>Сброс</button>
     </div>
