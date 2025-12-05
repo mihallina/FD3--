@@ -65,7 +65,7 @@ class MobileClient extends React.PureComponent {
   };
 
   render() {
-    let {client} = this.props;
+    let { client } = this.props;
     console.log("MobileClient id=" + client.id + " render");
 
     return (
@@ -108,8 +108,18 @@ class MobileClient extends React.PureComponent {
         <td>
           {this.state.isEditing ? (
             <div className="save-cancel">
-              <input type="button" value="✓" className="save" onClick={this.save} />
-              <input type="button" value="×" className="cancel" onClick={this.cancel} />
+              <input
+                type="button"
+                value="✓"
+                className="save"
+                onClick={this.save}
+              />
+              <input
+                type="button"
+                value="×"
+                className="cancel"
+                onClick={this.cancel}
+              />
             </div>
           ) : (
             <input
